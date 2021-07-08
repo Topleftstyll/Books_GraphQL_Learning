@@ -7,7 +7,10 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
+import mount from '../mount';
+import Hello from './hello_react';
 
+mount({Hello});
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
